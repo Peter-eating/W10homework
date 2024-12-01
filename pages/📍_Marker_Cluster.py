@@ -8,26 +8,24 @@ A Streamlit map template
 <https://github.com/opengeos/streamlit-map-template>
 """
 
-st.sidebar.title("About")
-st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
-st.sidebar.image(logo)
-
-st.title("Marker Cluster")
+st.title("Aboriginal Tribes")
 
 with st.expander("See source code"):
     with st.echo():
 
-        m = leafmap.Map(center=[24.445033, 118.375672],zoom=8,
-            locate_control=True, latlon_control=True, draw_export=True, minimap_control=True)
-            m.add_basemap(basemap)
-            cities = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
+        m = leafmap.Map(center=[23.97565, 120.9738819], zoom=4)
+        cities = "https://github.com/8048-kh/test/raw/refs/heads/main/Aboriginal%20Tribes%20area.csv"
+        regions = "https://github.com/8048-kh/test/raw/refs/heads/main/REGION.shp"
 
-            m.add_points_from_xy(
-                                    cities,
-                                    x='緯度',
-                                    y='經度',
-                                    spin=True,
-                                    add_legend=True,
-                                    layer_name='金門防空避難點')
-            m.to_streamlit(height=700)
+        m.add_shp(regions, layer_name="Aboriginal Tribes")
+        m.add_points_from_xy(
+            cities,
+            x="longitude",
+            y="latitude",
+            color_column="region",
+            icon_names=["gear", "map", "leaf", "globe"],
+            spin=True,
+            add_legend=True,
+        )
+
+m.to_streamlit(height=700)
