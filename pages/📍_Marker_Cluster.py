@@ -20,17 +20,14 @@ with st.expander("See source code"):
 
         m = leafmap.Map(center=[40, -100], zoom=4)
         cities = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
-        regions = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson"
 
-        m.add_geojson(regions, layer_name="US Regions")
         m.add_points_from_xy(
             cities,
             x='緯度',
             y='經度',
-            color_column="region",
-            icon_names=["gear", "map", "leaf", "globe"],
             spin=True,
             add_legend=True,
+            layer_name='金門防空避難設施'
         )
 
 m.to_streamlit(height=700)
