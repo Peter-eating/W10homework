@@ -26,7 +26,6 @@ with st.expander("See source code"):
             x='緯度',
             y='經度',
             spin=True,
-            add_legend=True,
             layer_name='金門防空避難設施'
         )
 
