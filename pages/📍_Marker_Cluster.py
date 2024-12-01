@@ -13,7 +13,7 @@ st.title("Aboriginal Tribes")
 with st.expander("See source code"):
     with st.echo():
 
-        m = leafmap.Map(center=[23.97565, 120.9738819], zoom=4)
+        m = leafmap.Map(center=[24.441831, 118.353515], zoom=4)
         cities = "https://raw.githubusercontent.com/Peter-eating/W10homework/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
         regions = "https://github.com/8048-kh/test/raw/refs/heads/main/REGION.shp"
 
