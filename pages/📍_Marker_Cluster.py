@@ -23,8 +23,8 @@ with st.expander("See source code"):
 
         m.add_points_from_xy(
             cities,
-            x='緯度',
-            y='經度',
+            x="緯度",
+            y="經度",
             spin=True,
             layer_name='金門防空避難設施'
         )
