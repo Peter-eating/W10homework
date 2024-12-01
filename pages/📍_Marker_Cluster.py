@@ -22,8 +22,6 @@ with st.expander("See source code"):
             cities,
             x="經度",
             y="緯度",
-            color_column="region",
-            icon_names=["gear", "map", "leaf", "globe"],
             spin=True,
             
         )
