@@ -15,7 +15,7 @@ with st.expander("See source code"):
 
         m = leafmap.Map(center=[24.441831, 118.353515], zoom=4)
         cities = "https://raw.githubusercontent.com/Peter-eating/W10homework/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
-        regions = "https://github.com/8048-kh/test/raw/refs/heads/main/REGION.shp"
+        regions = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN.shp"
 
         m.add_shp(regions, layer_name="KINMEN")
         m.add_points_from_xy(
