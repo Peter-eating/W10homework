@@ -18,7 +18,7 @@ st.title("Marker Cluster")
 with st.expander("See source code"):
     with st.echo():
 
-        m = leafmap.Map(center=[40, -100], zoom=4)
+        m = leafmap.Map(center=[24.445033, 118.375672], zoom=4)
         cities = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
 
         m.add_points_from_xy(
