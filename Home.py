@@ -22,5 +22,3 @@ st.markdown(
     S1143026盧奕廷
     """
 )
-datas = "https://raw.githubusercontent.com/Peter-eating/W10homework/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
-st.dataframe(datas)
