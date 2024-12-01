@@ -17,7 +17,7 @@ with st.expander("See source code"):
         cities = "https://raw.githubusercontent.com/Peter-eating/W10homework/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
         regions = "https://github.com/8048-kh/test/raw/refs/heads/main/REGION.shp"
 
-        m.add_shp(regions, layer_name="Aboriginal Tribes")
+        m.add_shp(regions, layer_name="KINMEN")
         m.add_points_from_xy(
             cities,
             x="經度",
@@ -25,7 +25,7 @@ with st.expander("See source code"):
             color_column="region",
             icon_names=["gear", "map", "leaf", "globe"],
             spin=True,
-            add_legend=True,
+            
         )
 
 m.to_streamlit(height=700)
