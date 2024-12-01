@@ -20,13 +20,15 @@ with st.expander("See source code"):
 
         m = leafmap.Map(center=[24.445033, 118.375672], zoom=4)
         cities = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
+        regions = "https://github.com/8048-kh/test/raw/refs/heads/main/REGION.shp"
 
         m.add_points_from_xy(
             cities,
             x="緯度",
             y="經度",
+            color_column="region",
+            icon_names=["gear", "map", "leaf", "globe"],
             spin=True,
-            layer_name='金門防空避難設施'
         )
 
 m.to_streamlit(height=700)
