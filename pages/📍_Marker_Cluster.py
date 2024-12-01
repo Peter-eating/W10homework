@@ -8,7 +8,7 @@ A Streamlit map template
 <https://github.com/opengeos/streamlit-map-template>
 """
 
-st.title("Aboriginal Tribes")
+st.title("KINMEN Air-Raid Shelters")
 
 with st.expander("See source code"):
     with st.echo():
@@ -20,8 +20,8 @@ with st.expander("See source code"):
         m.add_shp(regions, layer_name="Aboriginal Tribes")
         m.add_points_from_xy(
             cities,
-            x="緯度",
-            y="經度",
+            x="經度",
+            y="緯度",
             color_column="region",
             icon_names=["gear", "map", "leaf", "globe"],
             spin=True,
