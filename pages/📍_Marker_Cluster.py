@@ -19,7 +19,7 @@ with st.expander("See source code"):
     with st.echo():
 
         m = leafmap.Map(center=[24.445748, 118.377391], zoom=4)
-        cities = "https://github.com/Peter-eating/hw10.2/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter%20(1).csv"
+        cities = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
         regions = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN.shp"
 
         m.add_geojson(regions, layer_name="鄉鎮區界")
