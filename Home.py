@@ -15,7 +15,7 @@ logo = "https://i.imgur.com/UbOXYAU.png"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("hw10")
+st.title("hw10金門防空避難所分布")
 
 st.markdown(
     """
