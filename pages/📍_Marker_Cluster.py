@@ -34,4 +34,4 @@ with st.expander("See source code"):
         )
 
 m.to_streamlit(height=700)
-show(cities)
+print(cities)
