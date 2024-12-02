@@ -25,8 +25,8 @@ with st.expander("See source code"):
         m.add_geojson(regions, layer_name="鄉鎮區界")
         m.add_points_from_xy(
             cities,
-            x="Longitude",
-            y="Latitude",
+            x="經度",
+            y="緯度",
             color_column="轄管分局",
             icon_names=["gear", "map"],
             spin=True,
