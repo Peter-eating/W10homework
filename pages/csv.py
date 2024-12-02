@@ -18,5 +18,4 @@ st.sidebar.image(logo)
 st.title("KINMEN Air-Raid Shelter")
 
 cities = "https://github.com/Peter-eating/W10homework/raw/refs/heads/main/KINMEN%20Air-Raid%20Shelter.csv"
-df1 = pd.read_csv(cities)
-print(df1)
+st.dataframe(cities)
