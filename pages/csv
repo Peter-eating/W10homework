@@ -1,2 +1,4 @@
 import pandas as pd
 import csv
+df1 = pd.read_csv(cities)
+print(df1)
