@@ -1,5 +1,7 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
+import pandas as pd
+import csv
 
 st.set_page_config(layout="wide")
 
@@ -34,4 +36,5 @@ with st.expander("See source code"):
         )
 
 m.to_streamlit(height=700)
-print(cities)
+df1 = pd.read_csv(cities)
+print(df1)
